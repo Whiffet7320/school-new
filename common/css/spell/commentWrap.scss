@@ -1,0 +1,149 @@
+.comment_wrap{
+	margin-top: 20rpx;
+	background-color: #FFFFFF;
+	padding:20rpx 26rpx;
+	.total{
+		display: inline-block;
+		background-color: #fed1c9;
+		padding: 0 20rpx;
+		border-radius:0 60rpx 60rpx 0;
+		height: 60rpx;
+		line-height: 60rpx;
+		font-size: 24rpx;
+		font-family: PingFang SC, PingFang SC-Medium;
+		font-weight: 500;
+		text-align: center;
+		color: #000000;
+	}
+	.commlist{
+		padding-top:12rpx;
+		padding-left: 22rpx;
+		.commitem{
+			padding:28rpx 0;
+			display: flex;
+			border-bottom: 2rpx solid #f6f6f6;
+			&:last-child{
+				border-bottom: 0;
+			}
+			.img{
+				width: 54rpx;
+				height: 54rpx;
+				background-color: #eee;
+				border-radius: 50%;
+			}
+			.info{
+				padding-left: 20rpx;
+				flex:1;
+				.hd{
+					display: flex;
+					align-items: center;
+					.name{
+						flex:1;
+						font-size: 28rpx;
+						font-family: PingFang SC, PingFang SC-Bold;
+						font-weight: 700;
+						color: #000000;
+					}
+				}
+				.desc{
+					margin-top: 26rpx;
+					font-size: 24rpx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					color: #000000;
+				}
+				.feedback{
+					margin-top: 10rpx;
+					font-size: 20rpx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					color: #999;
+				}
+				.toolicon{
+					display: flex;
+					align-items: flex-start;
+					.zan{
+						display: flex;
+						align-items: center;
+						color: #848484;
+						margin-left:10rpx;
+						.text{
+							font-size: 20rpx;
+							font-family: PingFang SC, PingFang SC-Regular;
+							font-weight: 400;
+							margin-left: 7rpx;
+						}
+						&.on{
+							color:#FE694F;
+						}
+					}
+				}
+				.replaylist{
+					margin-top: 20rpx;
+					.replay_item{
+						display: flex;
+						margin-bottom: 20rpx;
+						.info{
+							.hd{
+								justify-content: flex-start;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.empty{
+	font-size: 24rpx;
+	font-family: PingFang SC, PingFang SC-Medium;
+	font-weight: 500;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 300rpx;
+}
+.commentModal{
+	width: 100%;
+	padding: 20rpx;
+	.utext{
+		width: 100%;
+		padding: 20rpx;
+		height: 200rpx;
+		background: #f1f1f1;
+		border-radius: 10rpx;
+		.replytext{
+			width: 100%;
+			height: 100%;
+			font-size: 24rpx;
+			font-family: PingFang SC, PingFang SC-Regular;
+			font-weight: 400;
+			color: #000000;
+			text-align: justify;
+		}
+		&.on{
+			.replytext::after{
+				content:"禁止发布内容和分类不符、营销推广类等内容，平台已引入AI智能机器人对您发布的信息进行自动检测，同时平台将加强巡查力度，整治不合规信息。";
+				font-size: 24rpx;
+				color:#8f8f8f;
+			}
+		}
+	}
+	.comtbtn{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20rpx;
+		.btns{
+			font-size: 24rpx;
+			color:#FFFFFF;
+			width: 160rpx;
+			height: 60rpx;
+			line-height: 60rpx;
+			background-color: #FE694F;
+			border-radius: 12rpx;
+			text-align: center;
+		}
+	}
+}

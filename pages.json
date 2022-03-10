@@ -1,0 +1,576 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsC/test/index", //启动页面，必选
+	// 		"query": "uuid=c4bba940-f69e-11ea-a419-6bafda9d095e&__id__=1" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [{
+			"path": "pages/tabBar/index",
+			"style": {
+				"navigationBarTitleText": "广科帮帮",
+				"navigationBarBackgroundColor": "#fe694f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/tabBar/order",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#fe694f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/tabBar/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#fe694f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#fe694f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// 
+		{
+			"path": "pages/order/addorder",
+			"style": {
+				"navigationBarTitleText": "确认下单",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/porder",
+			"style": {
+				"navigationBarTitleText": "拼单购买",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/pay",
+			"style": {
+				"navigationBarTitleText": "立即支付",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "校园帮帮",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/search/list",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/newslist",
+			"style": {
+				"navigationBarTitleText": "校园帮帮",
+				"navigationBarBackgroundColor": "#FE694F",
+				"navigationBarTextStyle": "white"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/user",
+			"pages": [{
+				"path": "BalancePage",
+				"style": {
+					"navigationBarTitleText": "余额",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "RedPacketPage",
+				"style": {
+					"navigationBarTitleText": "红包",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "ReceivingAddress",
+				"style": {
+					"navigationBarTitleText": "收货地址",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "NewAddress",
+				"style": {
+					"navigationBarTitleText": "新建地址",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "NotifyMessage",
+				"style": {
+					"navigationBarTitleText": "通知信息",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "PersonalInfo",
+				"style": {
+					"navigationBarTitleText": "个人信息",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "Aboutuser",
+				"style": {
+					"navigationBarTitleText": "关于我们",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "UserAgreement",
+				"style": {
+					"navigationBarTitleText": "用户协议",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "PrivacyAgreement",
+				"style": {
+					"navigationBarTitleText": "隐私协议",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "RelevantProvisions",
+				"style": {
+					"navigationBarTitleText": "相关条款",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "couponPage",
+				"style": {
+					"navigationBarTitleText": "优惠券",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "MerchantSettlement",
+				"style": {
+					"navigationBarTitleText": "商家入驻",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}]
+		}, {
+			"root": "pages/index/shudong",
+			"pages": [{
+				"path": "xiaoyuanshudong",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "校园树洞",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			},{
+				"path": "xiangqin",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "树洞详情",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}]
+		}, {
+			"root": "pages/index/kfing",
+			"pages": [{
+				"path": "kfing",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "待开发",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}]
+		}, {
+			"root": "pages/index/xiaoyuanbiaobai",
+			"pages": [{
+				"path": "xiaoyuanbiaobai",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "校园表白",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FE694F",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "biaobaiqiang",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "表白墙",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FE694F",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "xiangqin",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "详情",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FE694F",
+					"navigationBarTextStyle": "white"
+				}
+			}]
+		}, {
+			"root": "pages/index/zhaopin",
+			"pages": [{
+				"path": "qiuzhizhaopin",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "求职招聘",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fe694f",
+					"navigationBarTextStyle": "white"
+				}
+			}]
+		}, {
+			"root": "pages/index/detail",
+			"pages": [{
+				"path": "detail",
+				"style": {
+					// "navigationStyle": "custom",
+					"navigationBarTitleText": "加载中...",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		},
+		{
+			"root": "pages/spell",
+			"pages": [{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "帮帮拼单",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "detail",
+					"style": {
+						"navigationBarTitleText": "宝贝详情",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "mespell",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "addSpell",
+					"style": {
+						"navigationBarTitleText": "发布拼车"
+					}
+				},
+				{
+					"path": "addSpellpro",
+					"style": {
+						"navigationBarTitleText": "发布拼单"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/campus",
+			"pages": [{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "校园一角",
+						"navigationBarTextStyle": "white",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "scenery",
+					"style": {
+						"navigationBarTitleText": "校园风景",
+						"navigationBarTextStyle": "white",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "addScenery",
+					"style": {
+						"navigationBarTitleText": "发布风景",
+						"navigationBarTextStyle": "black",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "meScenery",
+					"style": {
+						"navigationBarTitleText": "我的风景",
+						"navigationBarTextStyle": "black",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "comment",
+					"style": {
+						"navigationBarTitleText": "我的风景",
+						"navigationBarTextStyle": "black",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "advice",
+					"style": {
+						"navigationBarTitleText": "社团咨询",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "adviceDetail",
+					"style": {
+						"navigationBarTitleText": "咨询详情",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "meAdvice",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "news",
+					"style": {
+						"navigationBarTitleText": "校园新闻",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "newsDetail",
+					"style": {
+						"navigationBarTitleText": "校园新闻",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "帮帮报修",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "repair",
+					"style": {
+						"navigationBarTitleText": "我的报修",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "addRepair",
+					"style": {
+						"navigationBarTitleText": "发布报修",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/lost",
+			"pages": [{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "失物招领",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "melost",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "addlost",
+					"style": {
+						"navigationBarTitleText": "发布寻物",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "addlostpro",
+					"style": {
+						"navigationBarTitleText": "发布寻主",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "detail",
+					"style": {
+						"navigationBarTitleText": "宝贝详情",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/market",
+			"pages": [{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "校园集市",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "addMarket",
+					"style": {
+						"navigationBarTitleText": "发布转卖",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "addMarketpro",
+					"style": {
+						"navigationBarTitleText": "发布收购",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				},
+				{
+					"path": "memarket",
+					"style": {
+						"navigationBarTitleText": "加载中...",
+						"navigationBarBackgroundColor": "#FE694F",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh":true
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "广科帮帮平台",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#D9D9D9",
+		"selectedColor": "#000000",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabBar/index",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home_s.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/order",
+				"iconPath": "static/images/order.png",
+				"selectedIconPath": "static/images/order_s.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/tabBar/user",
+				"iconPath": "static/images/user.png",
+				"selectedIconPath": "static/images/user_s.png",
+				"text": "我的"
+			}
+		]
+	}
+}

@@ -1,0 +1,123 @@
+.comment_list{
+	background-color: #FFFFFF;
+	.comment_item{
+		padding-bottom: 40rpx;
+		.woobox{
+			display: flex;
+			align-items: center;
+			.img{
+				width: 60rpx;
+				height: 60rpx;
+				background-color: #eee;
+				border-radius: 50%;
+				flex-shrink: 0;
+			}
+			.woobox_flex{
+				padding-left: 16rpx;
+				.name{
+					font-size: 28rpx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					text-align: left;
+					color: #010101;
+				}
+				.desc{
+					margin-top: 8rpx;
+					font-size: 20rpx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					text-align: left;
+					color: #c4c4c4;
+					.text{
+						padding-left: 10rpx;
+					}
+				}
+			}
+		}
+		.feed_content{
+			padding-top: 12rpx;
+			display: flex;
+			flex-direction: column;
+			.feed_item{
+				font-size: 24rpx;
+				padding-top: 8rpx;
+				display: flex;
+				color: #666666;
+				font-family: PingFang SC, PingFang SC-Medium;
+				.text{
+					display: flex;
+					.bold{
+						display: flex;
+						font-family: PingFang SC, PingFang SC-Medium;
+						font-weight:700;
+						color: #000000;
+					}
+					.sub{
+						flex:1;
+						font-family: PingFang SC, PingFang SC-Medium;
+						font-weight:400;
+					}
+				}
+			}
+			.tip{
+				padding-top: 12rpx;
+				font-size: 20rpx;
+				font-family: PingFang SC, PingFang SC-Medium;
+				color: #666666;
+			}
+			.call{
+				display: flex;
+				align-items: center;
+				.text{
+					margin-right: 12rpx;
+				}
+				.triangle-up {
+					margin-right: 5rpx;
+					width: 0;
+					height: 0;
+					border-left: 7rpx solid transparent;
+					border-right: 7rpx solid transparent;
+					border-bottom: 14rpx solid #FE694F;
+				}
+			}
+			.imglist{
+				padding-top: 12rpx;
+				display: flex;
+				flex-wrap: wrap;
+				.item{
+					width: 210rpx;
+					height: 210rpx;
+					margin-right: 14rpx;
+					margin-bottom: 14rpx;
+					background-color: #eee;
+					.img{
+						width: 100%;
+						height: 100%;
+					}
+					&:nth-child(3n){
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		.feed_ft{
+			padding: 14rpx 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			font-size: 20rpx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			color: #b3b3b3;
+			.right{
+				display: flex;
+				align-items: center;
+				.icon_l{
+					display: flex;
+					align-items: center;
+					margin-left: 12rpx;
+				}
+			}
+		}
+	}
+}
